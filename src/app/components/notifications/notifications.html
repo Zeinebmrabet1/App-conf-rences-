@@ -1,0 +1,29 @@
+<section class="card" id="notifications">
+  <div class="icon">#</div>
+
+  <div>
+    <h2>Zone de notifications</h2>
+
+    <button (click)="showNotifications = !showNotifications">
+      @if (showNotifications) {
+        Masquer
+      } @else {
+        Afficher notifications
+      }
+    </button>
+
+    <div class="notifications-container">
+      @if (showNotifications) {
+        <p>Vous avez 2 nouvelles notifications.</p>
+
+        <p class="notification">
+          Une nouvelle conférence est disponible.
+        </p>
+
+        <p class="notification">
+          Sami vous a envoyé une invitation.
+        </p>
+      }
+    </div>
+  </div>
+</section>
